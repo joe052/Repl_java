@@ -47,7 +47,7 @@ public class Math{
 
         int result = arr[n];
         
-        System.out.println(Arrays.toString(arr));
+        //System.out.println(Arrays.toString(arr));
         System.out.println(result);
     
         return result;        
