@@ -64,5 +64,24 @@ public class Arrays{
     System.out.println("sum is "+diag1);
     System.out.println("sum is "+diag2);
     System.out.println("difference is "+result);
-  }  
+  } 
+
+  public int [] counter(int [] arr){
+    //creating the filtering array
+      int []filtArr = new int[arr.length - 1];
+        
+      //implementing counter
+      int y = 0;
+      for(int i = 0;i < arr.length;i++){
+        int x = arr[i];
+        filtArr[x] = y+1;
+      }
+
+      //printing array
+      for(int i=0; i < filtArr.length; i++){
+       System.out.println(filtArr[i]);
+      }
+      //System.out.println(Arrays.toString(filtArr));
+      return filtArr;
+  }
 }

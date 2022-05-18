@@ -19,7 +19,9 @@ public class Main{
     nums.add(9);
 
     x.lonelyinteger(nums);
-    y.check();
+    //y.check();
+    int [] test = {1,3,3,4,5,6,6,7,8,9};
+    y.counter(test);
     //System.out.println(z);
   }
 }
