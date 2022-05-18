@@ -68,7 +68,8 @@ public class Arrays{
 
   public int [] counter(int [] arr){
     //creating the filtering array
-      int []filtArr = new int[arr.length - 1];
+    
+      int []filtArr = new int[arr[arr.length]];
         
       //implementing counter
       int y = 0;
