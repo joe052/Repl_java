@@ -68,21 +68,21 @@ public class Arrays{
 
   public int [] counter(int [] arr){
     //creating the filtering array
-    
-      int []filtArr = new int[arr[arr.length]];
+      int []filtArr = new int[arr.length];
         
       //implementing counter
-      int y = 0;
       for(int i = 0;i < arr.length;i++){
         int x = arr[i];
-        filtArr[x] = y+1;
+        filtArr[x]++;
       }
 
       //printing array
       for(int i=0; i < filtArr.length; i++){
        System.out.println(filtArr[i]);
       }
-      //System.out.println(Arrays.toString(filtArr));
+
+      System.out.println("\nfiltering array length is "+ filtArr.length);
+  
       return filtArr;
   }
 }

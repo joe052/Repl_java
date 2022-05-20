@@ -46,10 +46,49 @@ public class Math{
         }
 
         int result = arr[n];
-        
+
+
+          //printing arrays
+      for(int i=0; i < arr.length; i++){
+       System.out.println(arr[i]);
+      }
         //System.out.println(Arrays.toString(arr));
         System.out.println(result);
     
         return result;        
+    }
+
+  //for learning purpose
+  public static List<Integer> countingSort(List<Integer> arr) {
+    // Write your code here
+        //pushing elements to my new array
+        int []myArr = new int[arr.size()];
+        for(int i = 0;i < arr.size(); i++){
+            myArr[i] = arr.get(i);
+        }
+    
+        //creating the filtering array
+        int []filtArr = new int[myArr.length];
+            
+        //implementing counter
+        for(int i = 0;i < myArr.length;i++){
+            int x = myArr[i];
+            filtArr[x]++;
+        }
+
+        //printing array
+        for(int i=0; i < filtArr.length; i++){
+        System.out.println(filtArr[i]);
+        }
+
+        System.out.println("\nfiltering array length is "+ filtArr.length);
+        
+        List<Integer> result = new ArrayList<Integer>(filtArr.length);
+        for (int i : filtArr)
+        {
+            result.add(i);
+        }
+    
+        return result; 
     }
 }
