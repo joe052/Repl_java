@@ -4,7 +4,20 @@ public class Arrays{
   int [][] test = new int[5][3];
   
   public void check(){
-    int [][] myArr = {{50,45,67,70},{33,44,58,64},{90,87,78,82},{68,72,80,79}};
+    //int [][] myArr = {{50,45,67,70},{33,44,58,64},{90,87,78,82},{68,72,80,79}};
+    //int [][] myArr = {{2,3,1},{5,6,8},{4,7,9}};
+    /*
+    // Write your code here
+    int [][] myArr = new int[arr.size()][arr.size()];
+    
+    //converting arr(list) yo myArr(array)
+    for(int i = 0;i < arr.size();i++){
+        for(int j = 0; j < arr.get(i).size();j++){
+            myArr[i][j] = arr.get(i).get(j);
+        }
+    }
+  */
+    
     int[]testArr = new int[myArr.length];
     int[]testArr2 = new int[myArr.length];
 
