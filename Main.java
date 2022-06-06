@@ -5,16 +5,16 @@ public class Main{
   public static void main(String [] args){
     
     //Math x = new Math();
-    //Arrays arrays = new Arrays();
+    Arrays arrays = new Arrays();
     // int z = x.add(5,3);
     List<Integer> nums1 = new ArrayList<Integer>();
     List<Integer> nums2 = new ArrayList<Integer>();
     nums1.add(1);
-    nums1.add(3);
+    nums1.add(1);
     nums1.add(4);
-    nums2.add(8);
-    nums2.add(3);
-    nums2.add(2);
+    nums1.add(8);
+    nums1.add(8);
+    nums1.add(8);
     
     //x.lonelyinteger(nums);
     //arrays.check();
@@ -26,7 +26,9 @@ public class Main{
     //hack.simpleArraySum(nums);
 
     Rate rate = new Rate();
-    
-    System.out.println(rate.compareTriplets(nums1,nums2));
+    Sort s1 = new Sort();
+
+    s1.counter(nums1);
+    //System.out.println(rate.compareTriplets(nums1,nums2));
   }
 }

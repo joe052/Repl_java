@@ -81,7 +81,7 @@ public class Arrays{
 
   public int [] counter(int [] arr){
     //creating the filtering array
-      int []filtArr = new int[arr.length];
+      int []filtArr = new int[11];
         
       //implementing counter
       for(int i = 0;i < arr.length;i++){
